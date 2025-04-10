@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Screen Capture Tool</h1>
+    <button id="startCapture" (click)="startCapture()">Start Capture</button>
+    <video #screenVideo autoplay controls></video>
+    <canvas #canvas></canvas>
+    <button id="captureBtn" (click)="captureImage()">Capture Image</button>
+    <a #downloadLink id="downloadLink" download="screenshot.png">
+      <button id="downloadBtn">Download Image</button>
+    </a>
+  </div>
+  

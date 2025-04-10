@@ -1,0 +1,24 @@
+<div class="navbar">
+    <button (click)="showEditor('html')">HTML</button>
+    <button (click)="showEditor('css')">CSS</button>
+    <button (click)="showEditor('js')">JavaScript</button>
+  </div>
+  
+  <div [ngClass]="{ editor: true, hidden: activeEditor !== 'html' }">
+    <h2>HTML</h2>
+    <textarea [(ngModel)]="htmlCode" placeholder="Write HTML here..."></textarea>
+  </div>
+  
+  <div [ngClass]="{ editor: true, hidden: activeEditor !== 'css' }">
+    <h2>CSS</h2>
+    <textarea [(ngModel)]="cssCode" placeholder="Write CSS here..."></textarea>
+  </div>
+  
+  <div [ngClass]="{ editor: true, hidden: activeEditor !== 'js' }">
+    <h2>JavaScript</h2>
+    <textarea [(ngModel)]="jsCode" placeholder="Write JavaScript here..."></textarea>
+  </div>
+  
+  <button (click)="runCode()">Run</button>
+  <iframe id="output" class="output"></iframe>
+  

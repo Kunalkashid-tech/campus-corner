@@ -1,0 +1,7 @@
+<div class="container">
+    <h1>SHA-512 Hash Generator</h1>
+    <textarea [(ngModel)]="inputText" placeholder="Enter text to hash..."></textarea>
+    <button (click)="generateHash()">Generate SHA-512 Hash</button>
+    <textarea [value]="hashOutput" placeholder="Generated hash will appear here..." readonly></textarea>
+  </div>
+  

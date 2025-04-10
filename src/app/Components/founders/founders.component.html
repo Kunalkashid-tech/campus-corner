@@ -1,0 +1,16 @@
+<section class="founders-section">
+    <h2 class="founders-heading">👨‍💻 Meet the Founders</h2>
+    <div class="founders-container">
+      <div class="founder-card" *ngFor="let founder of founders">
+        <div class="founder-img-wrapper">
+          <img [src]="founder.image" [alt]="founder.name" />
+        </div>
+        <h3>{{ founder.name }}</h3>
+        <p>{{ founder.role }}</p>
+        <a [href]="founder.linkedin" target="_blank" class="linkedin-icon" title="LinkedIn">
+            <img src="assets/images/linkedin.png" alt="LinkedIn Icon" />
+          </a>
+      </div>
+    </div>
+  </section>
+  

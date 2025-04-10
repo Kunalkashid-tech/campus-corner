@@ -1,0 +1,94 @@
+<div class="navbar-page-container">
+    <h1 class="navbar-heading">🧭 Navigation Menu Hover Effects</h1>
+  
+    <p class="navbar-paragraph">
+      This animated navigation menu showcases creative hover interactions using just HTML and CSS. It's responsive, clean, and offers dynamic underline animations including center, upward reveal, and forward scale — perfect for portfolios and modern interfaces.
+    </p>
+  
+    <p class="navbar-paragraph">
+      Below is the HTML structure that sets up the menu layout. It consists of a flex-based unordered list with custom classes on list items to apply individual hover effects.
+    </p>
+  
+    <div class="code-block">
+      <h2>📄 HTML Code</h2>
+      <pre><code>
+  &lt;ul class="nav-links"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="center"&gt;&lt;a href="#"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="upward"&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="forward"&gt;&lt;a href="#"&gt;Feedback&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+      </code></pre>
+    </div>
+  
+    <p class="navbar-paragraph">
+      The CSS utilizes pseudo-elements (`::before`) to create stylish line animations under each nav link. Each hover effect—whether it grows from center, slides up, or expands from right to left—offers a unique visual experience. Flexbox keeps layout aligned and responsive across devices.
+    </p>
+  
+    <div class="code-block">
+      <h2>🎨 CSS Code</h2>
+      <pre><code>
+  .nav-links &#123;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 20px 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  &#125;
+  
+  .nav-links li a &#123;
+    position: relative;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+  &#125;
+  
+  .nav-links li a::before &#123;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #34efdf;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+  &#125;
+  
+  .nav-links li a:hover::before &#123;
+    width: 100%;
+  &#125;
+  
+  /* Center hover */
+  .nav-links li.center a::before &#123;
+    left: 50%;
+    transform: translateX(-50%);
+  &#125;
+  
+  /* Upward reveal */
+  .nav-links li.upward a::before &#123;
+    bottom: -5px;
+    opacity: 0;
+  &#125;
+  .nav-links li.upward a:hover::before &#123;
+    bottom: 0px;
+    opacity: 1;
+  &#125;
+  
+  /* Forward scale */
+  .nav-links li.forward a::before &#123;
+    transform: scaleX(0);
+    transform-origin: right;
+  &#125;
+  .nav-links li.forward a:hover::before &#123;
+    transform: scaleX(1);
+    transform-origin: left;
+  &#125;
+      </code></pre>
+    </div>
+  
+    <button class="download-button" (click)="downloadSource()">⬇️ Download Source Code</button>
+  </div>
+  

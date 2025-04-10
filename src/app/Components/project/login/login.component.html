@@ -1,0 +1,92 @@
+<div class="login-page-container">
+    <h1 class="login-heading">💻 Neumorphism Login Form</h1>
+  
+    <p class="login-paragraph">
+  This beautifully designed login form utilizes the neumorphism design trend, combining soft shadows and layered elements to give a modern, 3D appearance. It’s lightweight, responsive, and fully built with only HTML and CSS — perfect for personal projects, portfolios, or learning modern UI techniques.
+</p>
+
+<p class="login-paragraph">
+  The following HTML code outlines the complete structure of the login interface. It includes a container with a blurred backdrop effect, a welcoming message, input fields for user credentials, and visually engaging buttons including a custom Google sign-in option using SVG.
+</p>
+
+  
+    <div class="code-block">
+      <h2>📄 HTML Code</h2>
+      <pre><code>
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;title&gt;Login&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="container"&gt;
+      &lt;div class="login-box"&gt;
+        &lt;form class="form"&gt;
+          &lt;div class="logo"&gt;&lt;/div&gt;
+          &lt;span class="header"&gt;Welcome Back!&lt;/span&gt;
+          &lt;input type="email" placeholder="Email" class="input" /&gt;
+          &lt;input type="password" placeholder="Password" class="input" /&gt;
+          &lt;button type="submit" class="button sign-in"&gt;Sign In&lt;/button&gt;
+          &lt;button class="button google-sign-in"&gt;
+            &lt;svg class="icon"&gt;...&lt;/svg&gt;
+            &lt;span&gt;Sign in with Google&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;p class="footer"&gt;
+            Don't have an account? &lt;a href="#" class="link"&gt;Sign up&lt;/a&gt;&lt;br /&gt;
+            &lt;a href="#" class="link"&gt;Forgot password?&lt;/a&gt;
+          &lt;/p&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+      </code></pre>
+    </div>
+  
+    <p class="login-paragraph">
+        The CSS that powers this form embraces custom properties (CSS variables) for flexible theming, neumorphic effects, and smooth hover transitions. The container also features layered box shadows and subtle animation to bring your login form to life while staying performant and easy to maintain.
+      </p>
+      
+  
+    <div class="code-block">
+      <h2>🎨 CSS Code</h2>
+      <pre><code>
+  .container &#123;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #272727;
+    border-radius: 24px;
+    width: 315px;
+    height: 420px;
+    box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.2),
+      0 8px 16px rgba(0, 0, 0, 0.2),
+      0 0 8px rgba(255, 255, 255, 0.1),
+      0 0 16px rgba(255, 255, 255, 0.08);
+  &#125;
+  
+  .input &#123;
+    padding: 10px;
+    border-radius: 12px;
+    background: #3a3a3a;
+    color: white;
+    width: 100%;
+  &#125;
+  
+  .button &#123;
+    background: #373737;
+    color: white;
+    border-radius: 20px;
+    height: 40px;
+  &#125;
+      </code></pre>
+    </div>
+  
+    <button class="download-button" (click)="downloadSource()">⬇️ Download Full Source Code</button>
+
+  </div>
+  

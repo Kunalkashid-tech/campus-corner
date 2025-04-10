@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Git Version Control Simulator</h1>
+  
+    <div id="output" [innerHTML]="output"></div>
+  
+    <textarea [(ngModel)]="commitMessage" placeholder="Enter commit message"></textarea>
+  
+    <button (click)="initializeRepo()">Initialize Repository</button>
+    <button (click)="commitChanges()">Commit Changes</button>
+    <button (click)="viewCommitHistory()">View Commit History</button>
+  </div>
+  

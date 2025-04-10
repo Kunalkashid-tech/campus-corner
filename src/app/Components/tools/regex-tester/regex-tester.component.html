@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Regex Tester</h1>
+    <textarea [(ngModel)]="regexPattern" placeholder="Enter regex pattern..."></textarea>
+    <textarea [(ngModel)]="textToTest" placeholder="Enter text to test..."></textarea>
+    <button (click)="testRegex()">Test Regex</button>
+    <div id="results">
+      <h3 *ngIf="matches.length">Matches:</h3>
+      <ul *ngIf="matches.length">
+        <li *ngFor="let match of matches">{{ match }}</li>
+      </ul>
+      <p *ngIf="!matches.length">No matches found.</p>
+    </div>
+  </div>
+  

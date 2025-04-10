@@ -1,0 +1,57 @@
+.tool-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 80px; /* Add space before footer */
+}
+
+.tool-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 25px 20px 30px;
+  width: 260px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tool-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #222;
+}
+
+.tool-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 20px;
+  flex-grow: 1;
+}
+
+.tool-card .btn {
+  padding: 10px 18px;
+  background-color: #00CED1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.tool-card .btn:hover {
+  background-color: #0da3a6;
+}
+
+/* Heading alignment */
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+}

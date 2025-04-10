@@ -1,0 +1,81 @@
+.founders-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f4f5f4;
+  }
+  
+  .founders-heading {
+    font-size: 32px;
+    color: #1e1e2f;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  .founders-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .founder-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .founder-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .founder-img-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .founder-img-wrapper img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease;
+    border-radius: 12px;
+  }
+  
+  .founder-img-wrapper img:hover {
+    filter: grayscale(0%);
+  }
+  
+  .founder-card h3 {
+    margin: 10px 0 5px;
+    color: #1e1e2f;
+    font-size: 20px;
+  }
+  
+  .founder-card p {
+    color: #4a4a4a;
+    font-size: 14px;
+  }
+
+  .linkedin-icon {
+    margin-top: 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+  
+  .linkedin-icon img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .linkedin-icon:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
+  

@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>URL Encoder/Decoder</h2>
+    <textarea [(ngModel)]="inputText" placeholder="Enter URL or encoded/decoded text"></textarea>
+  
+    <div class="btn-group">
+      <button (click)="encodeURL()">Encode</button>
+      <button (click)="decodeURL()">Decode</button>
+    </div>
+  
+    <textarea [value]="outputText" placeholder="Result will appear here" readonly></textarea>
+  </div>
+  

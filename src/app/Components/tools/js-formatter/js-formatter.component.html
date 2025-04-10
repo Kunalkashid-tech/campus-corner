@@ -1,0 +1,7 @@
+<div class="container">
+    <h1>JavaScript Formatter</h1>
+    <textarea [(ngModel)]="inputCode" placeholder="Paste your JavaScript code here..."></textarea>
+    <button (click)="formatCode()">Format Code</button>
+    <textarea [value]="formattedCode" placeholder="Formatted code will appear here..." readonly></textarea>
+  </div>
+  

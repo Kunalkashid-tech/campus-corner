@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Barcode Generator</h1>
+    <input type="text" [(ngModel)]="barcodeText" placeholder="Enter text for barcode" />
+    <button (click)="generateBarcode()">Generate Barcode</button>
+    <div class="barcode-container">
+      <svg id="barcode"></svg>
+    </div>
+  </div>
+  

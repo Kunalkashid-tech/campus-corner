@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Documentation Generator</h1>
+    <form (ngSubmit)="addEntry()" #docForm="ngForm">
+      <label for="entryTitle">Entry Title:</label>
+      <input type="text" id="entryTitle" name="entryTitle" [(ngModel)]="entryTitle" required />
+  
+      <label for="entryContent">Entry Content:</label>
+      <textarea id="entryContent" name="entryContent" rows="5" [(ngModel)]="entryContent" required></textarea>
+  
+      <button type="submit">Add Entry</button>
+    </form>
+  
+    <div id="entries">
+      <div class="entry" *ngFor="let entry of entries">
+        <h2>{{ entry.title }}</h2>
+        <p>{{ entry.content }}</p>
+      </div>
+    </div>
+  
+    <button (click)="downloadDocumentation()">Download Documentation</button>
+  </div>
+  

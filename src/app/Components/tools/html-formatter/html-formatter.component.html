@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>HTML Formatter</h1>
+  
+    <textarea [(ngModel)]="htmlInput" placeholder="Paste your HTML code here..."></textarea>
+  
+    <button (click)="formatHTML()">Format</button>
+  
+    <textarea [value]="htmlOutput" placeholder="Formatted HTML will appear here..." readonly></textarea>
+  </div>
+  

@@ -1,0 +1,84 @@
+.login-page-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+  
+  .login-heading {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #1e1e2f;
+  }
+  
+  .login-paragraph {
+    text-align: center;
+    font-size: 16px;
+    color: #2e2e2e; /* Darker grey for better contrast */
+    margin: 20px auto;
+    max-width: 750px;
+    line-height: 1.75;
+  }
+  
+  
+  .code-block {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    font-family: 'Courier New', monospace;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 500px;
+    max-height: 400px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #444 transparent;
+  }
+  
+  .code-block::-webkit-scrollbar {
+    width: 6px;
+    height: 0;
+  }
+  
+  .code-block::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  .code-block h2 {
+    color: #F2138E;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  pre {
+    margin: 0;
+    white-space: pre;
+  }
+  
+  code {
+    font-size: 14px;
+    line-height: 1.5;
+    display: block;
+  }
+  
+  .download-button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 24px;
+    background-color: #00CED1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #008b8b;
+  }
+  

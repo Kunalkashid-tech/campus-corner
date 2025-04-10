@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>HTML Table Generator</h1>
+  
+    <div class="input-fields">
+      <label for="rows">Rows:</label>
+      <input type="number" [(ngModel)]="rows" min="1" />
+  
+      <label for="cols">Columns:</label>
+      <input type="number" [(ngModel)]="cols" min="1" />
+  
+      <button (click)="generateTable()">Generate Table</button>
+    </div>
+  
+    <div id="table-output" *ngIf="tableHTML">
+      <h2>Generated Table:</h2>
+      <pre>{{ tableHTML }}</pre>
+    </div>
+  </div>
+  

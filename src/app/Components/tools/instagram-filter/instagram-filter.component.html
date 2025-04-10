@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>Instagram Filters</h1>
+  
+    <div class="upload-section">
+      <button (click)="uploadInput.click()">Upload File</button>
+      <input type="file" #uploadInput accept="image/*" (change)="loadImage($event)" style="display: none" />
+    </div>
+  
+    <div class="image-section">
+      <canvas #canvas></canvas>
+    </div>
+  
+    <div class="filters">
+      <button (click)="applyFilter('normal')">Normal</button>
+      <button (click)="applyFilter('grayscale')">Grayscale</button>
+      <button (click)="applyFilter('sepia')">Sepia</button>
+      <button (click)="applyFilter('invert')">Invert</button>
+    </div>
+  
+    <div class="controls">
+      <button (click)="resetImage()">Reset</button>
+      <button (click)="downloadImage()">Download</button>
+    </div>
+  </div>
+  

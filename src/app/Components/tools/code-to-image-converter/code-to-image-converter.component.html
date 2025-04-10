@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Code to Image Generator</h1>
+  
+    <textarea [(ngModel)]="code" placeholder="Paste your code here..."></textarea>
+    <button (click)="generateImage()">Generate Image</button>
+    <button *ngIf="imageGenerated" id="downloadBtn" (click)="downloadImage()">Download Image</button>
+  
+    <div class="image-container" *ngIf="imageGenerated">
+      <img [src]="imageSrc" id="codeImage" alt="Generated Code Image">
+    </div>
+  </div>
+  

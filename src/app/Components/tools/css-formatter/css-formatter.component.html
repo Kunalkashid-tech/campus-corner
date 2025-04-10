@@ -1,0 +1,7 @@
+<div class="css-formatter-container">
+    <h1>CSS Formatter</h1>
+    <textarea [(ngModel)]="cssInput" placeholder="Paste your CSS code here..."></textarea>
+    <button (click)="formatCSS()">Format CSS</button>
+    <textarea [value]="cssOutput" placeholder="Formatted CSS will appear here..." readonly></textarea>
+  </div>
+  

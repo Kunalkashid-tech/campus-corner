@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Package Manager Generator</h1>
+  
+    <form (ngSubmit)="generateCommand()" #packageForm="ngForm">
+      <label for="packageManager">Package Manager:</label>
+      <select id="packageManager" [(ngModel)]="selectedManager" name="packageManager" required>
+        <option value="npm">npm</option>
+        <option value="yarn">yarn</option>
+        <option value="pip">pip</option>
+      </select>
+  
+      <label for="packageName">Package Name:</label>
+      <input type="text" id="packageName" [(ngModel)]="packageName" name="packageName" required>
+  
+      <button type="submit">Generate Command</button>
+    </form>
+  
+    <div id="output" *ngIf="generatedCommand">
+      <h2>Generated Command:</h2>
+      <p id="command">{{ generatedCommand }}</p>
+    </div>
+  </div>
+  

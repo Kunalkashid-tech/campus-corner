@@ -1,0 +1,11 @@
+<section class="tool-list">
+    <h2 class="heading">Coding Tools</h2>
+    <div class="tool-grid">
+      <div class="tool-card" *ngFor="let tool of tools">
+        <h3>{{ tool.title }}</h3>
+        <p>{{ tool.description }}</p>
+        <a [routerLink]="tool.link" class="btn">Try Now</a>
+      </div>
+    </div>
+  </section>
+  <app-footer></app-footer>

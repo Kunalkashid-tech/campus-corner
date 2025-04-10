@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>HTML Encoder/Decoder</h1>
+  
+    <textarea [(ngModel)]="inputText" placeholder="Enter your HTML here..."></textarea>
+  
+    <div class="button-group">
+      <button (click)="encodeHTML()">Encode</button>
+      <button (click)="decodeHTML()">Decode</button>
+    </div>
+  
+    <textarea [value]="outputText" placeholder="Result..."></textarea>
+  </div>
+  
