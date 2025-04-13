@@ -42,6 +42,7 @@ import { BarcodeGeneratorComponent } from './Components/tools/barcode-generator/
 import { ColorPickerComponent } from './Components/tools/color-picker/color-picker.component';
 import { CodeEditorComponent } from './Components/tools/code-editor/code-editor.component';
 import { CodeToImageConverterComponent } from './Components/tools/code-to-image-converter/code-to-image-converter.component';
+import { ProjectsComponent } from './Components/projects/projects.component';
 
 
 @NgModule({
@@ -85,6 +86,7 @@ import { CodeToImageConverterComponent } from './Components/tools/code-to-image-
     ColorPickerComponent,
     CodeEditorComponent,
     CodeToImageConverterComponent,
+    ProjectsComponent,
   
   ],
   imports: [

@@ -76,3 +76,31 @@
     background-color: #86198f;
   }
   
+
+  /* watermark code */
+
+  .blogs-section {
+    position: relative;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .blogs-section::before {
+    content: "COMING SOON";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: 900;
+    color: rgba(255, 0, 0, 0.15); /* Red watermark */
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+    text-transform: uppercase;
+  }
+  

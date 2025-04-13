@@ -33,6 +33,7 @@ import { BarcodeGeneratorComponent } from './Components/tools/barcode-generator/
 import { CodeEditorComponent } from './Components/tools/code-editor/code-editor.component';
 import { ColorPickerComponent } from './Components/tools/color-picker/color-picker.component';
 import { CodeToImageConverterComponent } from './Components/tools/code-to-image-converter/code-to-image-converter.component';
+import { ProjectsComponent } from './Components/projects/projects.component';
 
 
 const routes: Routes = [
@@ -69,6 +70,7 @@ const routes: Routes = [
   { path: 'tools/color-picker', component: ColorPickerComponent },
   { path: 'tools/code-editor', component: CodeEditorComponent },
   { path: 'tools/code-to-image-converter', component: CodeToImageConverterComponent },
+  { path: 'projects', component: ProjectsComponent}
 
   
   
