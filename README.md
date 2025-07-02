@@ -1,27 +1,46 @@
-# CampusCorner
+# 🎓 CampusCorner
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
+**CampusCorner** is a responsive web app built for college students to access free learning resources, coding tools, and productivity utilities — all in one place.
 
-## Development server
+![CampusCorner](src/assets/images/home.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## 🚀 Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- 📚 Download notes, previous question papers, and learning material
+- 💻 Built-in coding tools like formatters, slug generators, tree viewers, etc.
+- 📱 Fully responsive for mobile and desktop
+- 🎨 Modern UI with custom themes and animations
+- 🔍 Easy navigation and organized layout
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🛠 Tech Stack
 
-## Running unit tests
+- **Frontend:** HTML, CSS, JavaScript
+- **Framework:** Angular
+- **Tools:** GitHub Pages, MIT License
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 📸 Screenshots
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+| Home Page | Tools Panel |
+|-----------|-------------|
+| ![Home](src/assets/images/home.png) | ![Tools](src/assets/images/toolss.png) |
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 📦 Folder Structure
+
+```bash
+campus-corner/
+├── src/
+├── assets/
+├── index.html
+├── styles.css
+├── script.js
+├── README.md
+├── LICENSE
+└── .gitignore
